@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { connectDB } from "./config/db.js";
-import { connectCloudinary } from "./config/cloudinary.js";
+import connectCloudinary from "./config/cloudinary.js";
 import authRoutes from "./routes/authRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import menuRoutes from "./routes/menuRoutes.js";
@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 // database connection
 connectDB();
 
-connectCloudinary()
+connectCloudinary();
 
 app.use(cors());
 app.use(cookieParser());
