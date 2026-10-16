@@ -50,6 +50,8 @@ const Bookings = () => {
       fecthBookings();
     }
   }, []);
+
+  
   return (
     <div className="py-24 px-3 sm:px-6">
       <h1 className="text-3xl font-bold text-center my-3">All Bookings</h1>

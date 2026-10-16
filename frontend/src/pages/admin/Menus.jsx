@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
-import { AppContext } from "../context/AppContext";
 import { Search, X } from "lucide-react";
-import MenuCard from "../components/MenuCard";
+import MenuCard from "../../components/MenuCard";
+import { AppContext } from "../../context/AppContext";
 
 
 const Menu = () => {
