@@ -4,7 +4,6 @@ import { LockIcon, MailIcon, User2Icon } from "lucide-react";
 import { toast } from "react-hot-toast";
 import { AppContext } from "../context/AppContext";
 
-
 const Signup = () => {
   const { navigate, axios, loading, setLoading } = useContext(AppContext);
   // state for input value
