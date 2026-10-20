@@ -21,10 +21,12 @@ connectDB();
 
 connectCloudinary();
 
-app.use(cors({
-  origin: "https://cupt-restaurant.vercel.app", 
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: "https://cupt-restaurant.vercel.app",
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 app.use(express.json());
 
